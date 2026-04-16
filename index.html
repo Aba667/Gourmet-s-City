@@ -6,48 +6,50 @@
   <meta name="description" content="Gourmet's City — Pâtisseries artisanales à Dakar. Donuts, cupcakes, layer cakes, tiramisus et bien plus encore !" />
   <meta name="theme-color" content="#F9A8C9" />
   <title>Gourmets City 🎀</title>
-
+ 
   <link rel="icon" href="galerie/lo1.jpg" type="image/jpeg" />
   <link rel="apple-touch-icon" href="galerie/lo1.jpg" />
-
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+ 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+ 
 <nav class="navbar" id="navbar">
   <a href="#accueil" class="nav-logo">
     <img src="galerie/lo1.jpg" alt="Gourmets City" class="nav-logo-img" />
     <span class="nav-logo-text">Gourmets <span>City</span></span>
   </a>
-
+ 
   <ul class="nav-links">
     <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#apropos">Notre Histoire</a></li>
     <li><a href="#menu">Nos Créations</a></li>
     <li><a href="#commande">Commander</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-
+ 
   <div class="nav-social">
     <a href="https://www.instagram.com/gourmetscity_dkr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
     <a href="https://www.tiktok.com/@gourmetscity_dkr" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
     <a href="https://www.snapchat.com/add/gourmetscity" target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
     <a href="https://wa.me/221788737138" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
   </div>
-
+ 
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
-
+ 
 <div class="mobile-menu" id="mobileMenu">
   <ul>
     <li><a href="#accueil"   onclick="closeMobile()">Accueil</a></li>
+    <li><a href="#apropos"   onclick="closeMobile()">Notre Histoire</a></li>
     <li><a href="#menu"      onclick="closeMobile()">Nos Créations</a></li>
     <li><a href="#commande"  onclick="closeMobile()">Commander</a></li>
     <li><a href="#contact"   onclick="closeMobile()">Contact</a></li>
@@ -59,31 +61,31 @@
     <a href="https://wa.me/221788737138" target="_blank"><i class="fab fa-whatsapp"></i></a>
   </div>
 </div>
-
+ 
 <section id="accueil" class="hero">
   <div class="hero-blob hero-blob-1"></div>
   <div class="hero-blob hero-blob-2"></div>
   <div class="hero-blob hero-blob-3"></div>
-
+ 
   <div class="petals-wrap" id="petals"></div>
-
+ 
   <div class="hero-content">
     <div class="hero-logo-wrap">
       <div class="hero-logo-ring"></div>
       <img src="galerie/lo1.jpg" alt="Gourmets City" class="hero-logo" />
     </div>
-
+ 
     <div class="hero-pill">✦ Pâtisseries Artisanales · Dakar ✦</div>
-
+ 
     <h1>
       Bienvenue chez Gourmet's City
     </h1>
-
+ 
     <p>
       Des créations sucrées faites avec amour, pour sublimer vos moments précieux.
       Donuts, cupcakes, layer cakes, tiramisus… et bien plus encore ✨
     </p>
-
+ 
     <div class="hero-ctas">
       <a href="#menu" class="btn-pink">
         <i class="fas fa-star"></i> Découvrir la carte
@@ -93,13 +95,92 @@
       </a>
     </div>
   </div>
-
+ 
   <div class="scroll-hint">
     <span>Défiler</span>
     <i class="fas fa-chevron-down"></i>
   </div>
 </section>
-
+ 
+ 
+<!-- ══════════════════════════════
+     QUI SOMMES-NOUS
+══════════════════════════════ -->
+<section id="apropos" class="about-sec">
+  <div class="about-deco-blob about-blob-1"></div>
+  <div class="about-deco-blob about-blob-2"></div>
+ 
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">✦ Notre histoire ✦</span>
+      <h2 class="sec-title">Qui <em>sommes-nous ?</em></h2>
+      <div class="sec-line">✦</div>
+    </div>
+ 
+    <div class="about-layout">
+ 
+      <!-- Colonne gauche — infos clés -->
+      <div class="about-left reveal">
+        <div class="about-badge">
+          <div class="about-badge-icon">🎀</div>
+          <div>
+            <div class="about-badge-title">Fondée le</div>
+            <div class="about-badge-val">14 sept. 2025</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-icon">📍</div>
+          <div>
+            <div class="about-badge-title">Basée à</div>
+            <div class="about-badge-val">Keur Massar, Dakar</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-icon">🤍</div>
+          <div>
+            <div class="about-badge-title">Fait à la main</div>
+            <div class="about-badge-val">Sucré & Salé</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-icon">🌿</div>
+          <div>
+            <div class="about-badge-title">Produits</div>
+            <div class="about-badge-val">Frais & de qualité</div>
+          </div>
+        </div>
+ 
+        <div class="about-quote">
+          <span class="about-quote-mark">"</span>
+          Chaque création allie saveur et esthétique, pour offrir une expérience gourmande unique.
+          <span class="about-quote-mark">"</span>
+        </div>
+      </div>
+ 
+      <!-- Colonne droite — texte -->
+      <div class="about-right reveal">
+        <div class="about-story-card">
+          <div class="about-story-deco">✦</div>
+          <p class="about-story-text">
+            Fondée le <strong>14 septembre 2025</strong> à Keur Massar, la marque puise son origine dans une passion développée dès l'enfance, à travers la réalisation de recettes et une envie constante de création.
+          </p>
+          <p class="about-story-text">
+            Créée spontanément, avec audace et détermination, <strong>Gourmet's City</strong> tire également son nom d'un moment simple partagé en famille.
+          </p>
+          <p class="about-story-text">
+            Aujourd'hui, la marque propose des créations faites à la main, aussi bien sucrées que salées, élaborées à partir de <strong>produits frais et de qualité</strong>.
+          </p>
+          <div class="about-divider"><span>✦</span></div>
+          <p class="about-story-sub">
+            Chaque réalisation allie saveur et esthétique, pour offrir une expérience gourmande unique 💕
+          </p>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
 <section id="menu">
   <div class="container">
     <div class="sec-head">
@@ -108,11 +189,11 @@
       <div class="sec-line">✦</div>
       <p class="sec-sub">Toutes nos pâtisseries sont préparées avec des ingrédients de qualité et beaucoup d'amour 💕</p>
     </div>
-
+ 
     <div class="products-grid reveal" id="productsGrid"></div>
   </div>
 </section>
-
+ 
 <section id="commande" class="custom-banner">
   <div class="container">
     <span class="sec-tag" style="color:rgba(255,255,255,.6);">✦ Personnalisation ✦</span>
@@ -122,21 +203,21 @@
       Certaines créations ou modifications sont possibles !
       Saveurs, tailles, décorations... parlez-nous de votre projet et nous le réaliserons avec plaisir 🎀
     </p>
-
+ 
     <div class="custom-feats">
       <div class="custom-feat"><i class="fas fa-paint-brush"></i> Design personnalisé</div>
       <div class="custom-feat"><i class="fas fa-birthday-cake"></i> Gâteaux d'anniversaire</div>
       <div class="custom-feat"><i class="fas fa-heart"></i> Créations de mariage</div>
       <div class="custom-feat"><i class="fas fa-gift"></i> Box cadeaux sur mesure</div>
     </div>
-
+ 
     <a href="https://wa.me/221788737138?text=Bonjour%20Gourmets%20City%2C%20je%20voudrais%20une%20commande%20personnalis%C3%A9e%20%F0%9F%8E%80"
        target="_blank" class="btn-wa">
       <i class="fab fa-whatsapp"></i> Envoyer un message
     </a>
   </div>
 </section>
-
+ 
 <section id="contact" class="social-sec">
   <div class="container">
     <div class="sec-head">
@@ -145,26 +226,26 @@
       <div class="sec-line">✦</div>
       <p class="sec-sub">Suivez-nous pour ne rien manquer de nos nouvelles créations et inspirations gourmandes 🍰</p>
     </div>
-
+ 
     <div class="social-grid">
       <a href="https://www.instagram.com/gourmetscity_dkr" target="_blank" class="soc-card ig">
         <div class="soc-icon"><i class="fab fa-instagram"></i></div>
         <span class="soc-name">Instagram</span>
         <span class="soc-handle">@gourmetscity_dkr</span>
       </a>
-
+ 
       <a href="https://www.tiktok.com/@gourmetscity_dkr" target="_blank" class="soc-card tk">
         <div class="soc-icon"><i class="fab fa-tiktok"></i></div>
         <span class="soc-name">TikTok</span>
         <span class="soc-handle">@gourmetscity_dkr</span>
       </a>
-
+ 
       <a href="https://www.snapchat.com/add/gourmetscity" target="_blank" class="soc-card snap">
         <div class="soc-icon"><i class="fab fa-snapchat-ghost"></i></div>
         <span class="soc-name">Snapchat</span>
         <span class="soc-handle">@gourmetscity</span>
       </a>
-
+ 
       <a href="https://wa.me/221788737138" target="_blank" class="soc-card wa">
         <div class="soc-icon"><i class="fab fa-whatsapp"></i></div>
         <span class="soc-name">WhatsApp</span>
@@ -173,7 +254,7 @@
     </div>
   </div>
 </section>
-
+ 
 <footer>
   <a href="#accueil" class="footer-logo">
     <img src="galerie/lo1.jpg" alt="Gourmets City" />
@@ -181,32 +262,32 @@
   </a>
   <p>Fait avec <strong>♥</strong> à Dakar — © 2025 Gourmets City. Tous droits réservés.</p>
 </footer>
-
+ 
 <a href="https://wa.me/221788737138" target="_blank" class="float-wa" aria-label="WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
-
+ 
 <a href="#accueil" class="back-top" id="backTop" aria-label="Retour en haut">
   <i class="fas fa-chevron-up"></i>
 </a>
-
+ 
 <div class="lb" id="lightbox" role="dialog" aria-modal="true">
   <div class="lb-inner">
     <div class="lb-top">
       <span class="lb-label" id="lbLabel"></span>
       <button class="lb-close" id="lbClose" aria-label="Fermer"><i class="fas fa-times"></i></button>
     </div>
-
+ 
     <div class="lb-stage" id="lbStage">
       <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
       <button class="lb-arrow lb-next" id="lbNext" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
     </div>
-
+ 
     <div class="lb-counter" id="lbCounter"></div>
     <div class="lb-thumbs" id="lbThumbs"></div>
   </div>
 </div>
-
+ 
 <script src="script.js"></script>
 </body>
 </html>
