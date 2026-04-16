@@ -754,6 +754,208 @@ section { padding: 88px 24px; }
 }
 
 /* ═══════════════════════════════════════
+   QUI SOMMES-NOUS
+═══════════════════════════════════════ */
+.about-sec {
+  position: relative;
+  padding: 96px 24px;
+  background: linear-gradient(160deg, var(--white) 0%, var(--rose-pale) 50%, var(--white) 100%);
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-deco-blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(70px);
+}
+
+.about-blob-1 {
+  width: 420px; height: 420px;
+  background: radial-gradient(circle, rgba(244,114,182,.14), transparent 70%);
+  top: -60px; right: -80px;
+}
+
+.about-blob-2 {
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(201,149,58,.10), transparent 70%);
+  bottom: -60px; left: -60px;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.55fr;
+  gap: 48px;
+  align-items: start;
+  margin-top: 52px;
+  text-align: left;
+}
+
+/* ── Left column: badges ── */
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--white);
+  border: 1.5px solid var(--blush);
+  border-radius: var(--r);
+  padding: 14px 20px;
+  box-shadow: 0 3px 14px var(--shadow);
+  transition: transform .3s var(--ease), box-shadow .3s;
+}
+
+.about-badge:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 24px var(--shadow-deep);
+  border-color: var(--rose);
+}
+
+.about-badge-icon {
+  font-size: 1.55rem;
+  flex-shrink: 0;
+  width: 44px; height: 44px;
+  background: var(--rose-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-badge-title {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  margin-bottom: 2px;
+}
+
+.about-badge-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--plum-dark);
+}
+
+.about-quote {
+  margin-top: 8px;
+  background: linear-gradient(135deg, var(--plum-dark), var(--plum-mid));
+  border-radius: var(--r);
+  padding: 22px 22px;
+  color: rgba(255,255,255,.88);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  text-align: center;
+  position: relative;
+}
+
+.about-quote-mark {
+  font-size: 2rem;
+  color: var(--rose);
+  line-height: 0;
+  vertical-align: -0.35em;
+  font-style: normal;
+  margin: 0 3px;
+}
+
+/* ── Right column: story card ── */
+.about-right {}
+
+.about-story-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 40px 40px 36px;
+  box-shadow: 0 6px 32px var(--shadow);
+  border: 1.5px solid var(--blush);
+  position: relative;
+}
+
+.about-story-deco {
+  position: absolute;
+  top: -14px; left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--gold), #E8A44A);
+  color: white;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .75rem;
+  box-shadow: 0 4px 14px rgba(201,149,58,.4);
+}
+
+.about-story-text {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.about-story-text strong { color: var(--plum-dark); font-weight: 700; }
+
+.about-divider {
+  text-align: center;
+  margin: 24px 0 20px;
+  position: relative;
+}
+
+.about-divider::before,
+.about-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 38%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--blush), transparent);
+}
+
+.about-divider::before { left: 0; }
+.about-divider::after  { right: 0; }
+
+.about-divider span {
+  color: var(--rose);
+  font-size: .85rem;
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  padding: 0 10px;
+}
+
+.about-story-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.18rem;
+  font-style: italic;
+  color: var(--text-mid);
+  line-height: 1.75;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-story-card {
+    padding: 30px 22px 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-sec { padding: 64px 16px; }
+}
+
+/* ═══════════════════════════════════════
    SOCIAL
 ═══════════════════════════════════════ */
 .social-sec {
