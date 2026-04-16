@@ -68,7 +68,7 @@ const products = [
     name: 'Box Sucrée',
     emoji: '🍬',
     desc: 'Assortiments sucrés gourmands, parfaits pour se faire plaisir ou offrir.',
-    prices: [{ label: 'À partir de 8 000 FCFA', desc: '' }],
+    prices: [{ label: 'À partir de 2 000 FCFA', desc: '' }],
     media: [
       { type: 'img', src: 'galerie/bosu1.jpg' },
       { type: 'img', src: 'galerie/bosu2.jpg' },
@@ -86,7 +86,7 @@ const products = [
     name: 'Box Salée',
     emoji: '🥐',
     desc: 'Nos box salées généreuses et savoureuses, idéales pour les moments partagés.',
-    prices: [{ label: 'À partir de 12 500 FCFA', desc: '' }],
+    prices: [{ label: 'À partir de 3 000 FCFA', desc: '' }],
     media: [
       { type: 'img', src: 'galerie/bosa1.jpg' },
       { type: 'vid', src: 'galerie/bosa1.mp4' },
@@ -115,11 +115,14 @@ const products = [
     prices: [
       { label: '1 500 FCFA', desc: 'Petite portion' },
       { label: '3 000 FCFA', desc: 'Grande portion' },
+      { label: '10 000 FCFA', desc: 'Premium' },
     ],
     media: [
       { type: 'img', src: 'galerie/ti1.jpg' },
       { type: 'img', src: 'galerie/ti2.jpg' },
       { type: 'img', src: 'galerie/ti3.jpg' },
+      { type: 'img', src: 'galerie/ti4.jpg' },
+      { type: 'img', src: 'galerie/ti2.mp4' },
       { type: 'vid', src: 'galerie/ti1.mp4' },
     ]
   },
